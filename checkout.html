@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Ecommerce website</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section id="header">
+      <a href="#"><img src="" alt="logo" /><h3>LOGO</h3></a>
+
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="section-p1">
+      <h2>Checkout</h2>
+
+      <div class="checkout-container">
+        <!-- Shipping Information -->
+        <div class="shipping-details">
+          <h3>Shipping Information</h3>
+          <form id="shipping-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St" required />
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="City" required />
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Country" required />
+
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" placeholder="12345" required />
+          </form>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="order-items">
+            <div class="order-item">
+              <img src="img/products/f1.jpg" alt="" />
+              <div class="item-details">
+                <h5>Men's T-shirt</h5>
+                <p>Size: M</p>
+                <span>$99</span>
+              </div>
+            </div>
+          <div class="order-items">
+            <div class="order-item">
+              <img src="img/products/Mac.jpg" alt="" />
+              <div class="item-details">
+                <h5>Laptop</h5>
+                <p>RAM : 16gb</p>
+                <span>$999</span>
+              </div>
+            </div>
+            <div class="order-item">
+              <img src="img/products/iphone.webp" alt="" />
+              <div class="item-details">
+                <h5>Mobile</h5>
+                <p>RAM : 6gb</p>
+                <span>$599</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-total">
+            <p>Subtotal: $1697</p>
+            <p>Shipping: Free</p>
+            <p><strong>Total: $1697</strong></p>
+          </div>
+
+          <button id="checkout_btn" class="normal">Confirm Order</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <section id="footer">
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="132" height="27" alt="Shop Logo" />
+              </a>
+              <p class="footer-text">Your one-stop shop for quality products.</p>
+            </div>
+
+            <div class="footer-links">
+              <h3 class="footer-title">Company</h3>
+              <ul class="footer-list">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h3 class="footer-title">Support</h3>
+              <ul class="footer-list">
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Info</a></li>
+                <li><a href="#">Return Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-links">
+              <h3 class="footer-title">Follow Us</h3>
+              <ul class="footer-list social-icons">
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+              </ul>
+            </div>
+
+            <div class="footer-contact">
+              <h3 class="footer-title">Contact Info</h3>
+              <p>123 Main St, City, Country</p>
+              <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+              <p>Phone: <a href="tel:+01234567890">+012 345 678 90</a></p>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script>
+      document.getElementById('checkout_btn').addEventListener('click', function() {
+            // Simulate a payment response
+            const success = Math.random() > 0.5; // Random success/failure
+
+            if (success) {
+                window.location.href = 'payment-success.html'; // Redirect to payment success
+            } else {
+                window.location.href = 'payment-failure.html'; // Redirect to payment failure
+            }
+        });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

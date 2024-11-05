@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ecommerce website</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <section id="header">
+            <a href="#"><img src="" alt="logo"><h3>LOGO</h3></a>
+
+            <div>
+                <ul id="navbar">
+                    <li><a class="'active" href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class='far fa-shopping-bag'></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section id="cart" class="section-p1">
+            <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td><a href="#"<i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/f1.jpg" alt=""></td>
+                    <td>T-Shirt</td>
+                    <td>$99</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$99</td>
+                </tr>
+                <tr>
+                    <td><a href="#"<i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/Mac.jpg" alt=""></td>
+                    <td>Laptop</td>
+                    <td>$999</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$999</td>
+                </tr>
+                <tr>
+                    <td><a href="#"<i class="far fa-times-circle"></i></a></td>
+                    <td><img src="img/products/iphone.webp" alt=""></td>
+                    <td>Mobile</td>
+                    <td>$599</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$599</td>
+                </tr>
+             </tbody>
+
+        </table>
+
+        </section>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon</h3>
+                <div>
+                    <input type="text" placeholder="Enter your coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+            <div id="Subtotal">
+                <h3>Cart Subtotal</h3>
+                <table>
+                    <tr>
+                        <td> Cart Subtotal</td>
+                        <td>$1697</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$1697</strong></td>
+                    </tr>
+                </table>
+                <button class="normal"  onclick="window.location.href='checkout.html';">Proceed To Checkout</button>
+            </div>
+        </section>
+
+
+        <section id="footer" >
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-brand">
+                            <a href="#" class="logo">
+                                <img src="./assets/images/logo.svg" width="132" height="27" alt="Shop Logo">
+                            </a>
+                            <p class="footer-text">Your one-stop shop for quality products.</p>
+                        </div>
+            
+                        <div class="footer-links">
+                            <h3 class="footer-title">Company</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-links">
+                            <h3 class="footer-title">Support</h3>
+                            <ul class="footer-list">
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Shipping Info</a></li>
+                                <li><a href="#">Return Policy</a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-links">
+                            <h3 class="footer-title">Follow Us</h3>
+                            <ul class="footer-list social-icons">
+                                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                                <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                            </ul>
+                        </div>
+            
+                        <div class="footer-contact">
+                            <h3 class="footer-title">Contact Info</h3>
+                            <p>123 Main St, City, Country</p>
+                            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                            <p>Phone: <a href="tel:+01234567890">+012 345 678 90</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-bottom">
+                        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </footer>
+            
+        </section>
+
+     
+        <script src="script.js"></script>
+    </body>
+
+</html>
